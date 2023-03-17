@@ -1,10 +1,9 @@
 import './App.css';
+import UserListScreen from "./Screens/UserListScreen";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <UserListScreen />
   );
 }
 
