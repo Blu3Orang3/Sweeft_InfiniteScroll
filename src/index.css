@@ -31,12 +31,24 @@ code {
   height: 100%;
   width: 100%;
 }
-.grid-item p{
+    p{
   margin: 3px 1px 1px 5px;
   font-size: large;
+}
+.grid-item a{
+
+  text-decoration: none ;
+  color: black ;
 }
 
 .loader {
   position: absolute;
   left: 50%;
+}
+
+.profileInfoCard {
+  display: flex;
+  flex-direction: row;
+
+  font-size: larger;
 }
