@@ -12,22 +12,54 @@ code {
     monospace;
 }
 
+fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
+}
+
+.infoField {
+  margin-left: 20px;
+  width: 100%;
+}
+
 .root {
   position: relative;
 }
 
+.wrapper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .list-grid-container {
-  display: grid;
-  grid-template-columns: repeat(4,25%);
-  gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
-  margin: 1rem 12rem 1rem 12rem;
+  margin-top: 1rem;
 }
 
-.grid-item {
-  border: 1px solid black;
+.list-item {
+  width: 25%;
 }
-.grid-item img{
+
+.list-item-content {
+    margin: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.list-item img{
   height: 100%;
   width: 100%;
 }
@@ -39,7 +71,7 @@ code {
   margin: 3px 1px 1px 5px;
   font-size: large;
 }
-.grid-item a{
+.list-item a{
 
   text-decoration: none ;
   color: black ;
@@ -54,5 +86,9 @@ code {
   display: flex;
   flex-direction: row;
 
-  font-size: larger;
+  justify-content: space-between;
+  align-items: center;
+
+
+  font-size: large;
 }

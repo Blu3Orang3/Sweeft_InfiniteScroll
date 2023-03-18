@@ -40,11 +40,11 @@ const UserListScreen = () => {
   });
 
   return (
-    <>
+    <div className="wrapper-container">
       <div className='list-grid-container'> {content}</div>
 
       {isLoading && <LoadingSpinner />}
-    </>
+    </div>
   );
 };
 export default UserListScreen;

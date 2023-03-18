@@ -2,6 +2,8 @@ const ProfileDetailsCard = ({ user }) => {
   const ProfileCardBody = (
     <div className='profileInfoCard'>
       <img src={`${user.imageUrl}?t=${user.id}`} alt='' />
+      <fieldset className="infoField">
+        <legend>info</legend>
       <div className='userAddress'>
         <div className='nameInfo'>
           <p>
@@ -17,6 +19,9 @@ const ProfileDetailsCard = ({ user }) => {
         <p>Job Area: {user.jobArea}</p>
         <p>Job Type: {user.jobType}</p>
       </div>
+      </fieldset>
+      <fieldset className="addressField">
+        <legend>address</legend>
       <div className='userInfo'>
         {user.address ? (
           <>
@@ -28,6 +33,7 @@ const ProfileDetailsCard = ({ user }) => {
           </>
         ) : null}
       </div>
+      </fieldset>
     </div>
   );
 

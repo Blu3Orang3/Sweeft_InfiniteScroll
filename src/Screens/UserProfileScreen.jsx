@@ -25,6 +25,7 @@ const UserProfileScreen = () => {
   useEffect(() => {
     setPage(1); // reset page to 1 when userId changes
     setFriendData([]);
+    document.documentElement.scrollTo(0, 0);
   }, [userId,setFriendData]);
 
   console.log(page);
@@ -59,14 +60,14 @@ const UserProfileScreen = () => {
   console.log(userData);
 
   return (
-    <>
+    <div className="wrapper-container">
       <Link to='/'>Go Back</Link>
       {isUserLoading && <p>Image loading....</p>}
       {userData ? <ProfileDetailsCard user={userData} /> : null}
       <h2>Friends:</h2>
       <div className='list-grid-container'> {FriendList}</div>
       {isLoading && <LoadingSpinner />}
-    </>
+    </div>
   );
 };
 export default UserProfileScreen;

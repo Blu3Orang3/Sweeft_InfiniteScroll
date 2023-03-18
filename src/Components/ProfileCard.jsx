@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProfileCard = React.forwardRef(({ user }, ref) => {
   const userCardBody = (
-    <div>
+    <div className="list-item-content">
       <Link to={`/user/${user.id}`} >
         <img src={`${user.imageUrl}?t=${user.id}`} alt=''/>
         <div className='cardbody'>
@@ -20,11 +20,11 @@ const ProfileCard = React.forwardRef(({ user }, ref) => {
   );
 
   const content = ref ? (
-    <div ref={ref} className='grid-item'>
+    <div ref={ref} className='list-item'>
       {userCardBody}
     </div>
   ) : (
-    <div className='grid-item'>{userCardBody}</div>
+    <div className='list-item'>{userCardBody}</div>
   );
 
   return content;
