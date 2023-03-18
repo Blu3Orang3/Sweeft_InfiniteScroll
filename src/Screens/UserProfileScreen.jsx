@@ -14,7 +14,7 @@ const UserProfileScreen = () => {
 
   console.log(userId);
 
-  const { isLoading, isError, error, friendData, hasNextPage } = useFriendList(
+  const { isLoading, isError, error, friendData, hasNextPage, setFriendData } = useFriendList(
     page,
     size,
     userId
@@ -24,7 +24,8 @@ const UserProfileScreen = () => {
 
   useEffect(() => {
     setPage(1); // reset page to 1 when userId changes
-  }, [userId]);
+    setFriendData([]);
+  }, [userId,setFriendData]);
 
   console.log(page);
 

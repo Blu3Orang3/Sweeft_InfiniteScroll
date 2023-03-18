@@ -35,10 +35,10 @@ const useFriendList = (page = 1, size = 8, userId,) => {
       });
 
     return () => controller.abort();
-  }, [page,size,userId,]);
+  }, [page,size,userId]);
 
 
-  return { isLoading, isError, error, friendData, hasNextPage };
+  return { isLoading, isError, error, friendData, hasNextPage, setFriendData };
 };
 
 export default useFriendList;
