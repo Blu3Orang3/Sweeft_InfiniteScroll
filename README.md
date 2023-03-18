@@ -4,13 +4,7 @@
 
 [deployment on s3](http://sweeft-infinitescroll.s3-website.eu-central-1.amazonaws.com/)
 
- deployments doesn't work unfortunately due to cross origin policy,but hopefully it should work locally
-
-```mermaid
-sequenceDiagram
-https -x http: api call from axios
-
-```
+other work unfortunately due to cross origin policy,but hopefully it should work on aws
 
 infinite scrolling functionality is implemented 
 
