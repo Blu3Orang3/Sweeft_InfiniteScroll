@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import ProfileCard from '../Components/ProfileCard';
-import useList from '../hooks/useList';
+import useList from '../getterHooks/useList';
 import LoadingSpinner from '../Components/LoadingSpinner';
 
 const UserListScreen = () => {
@@ -43,10 +43,7 @@ const UserListScreen = () => {
     <>
       <div className='list-grid-container'> {content}</div>
 
-      { <LoadingSpinner />}
-      <p className='center'>
-        <a href='#top'>Back To Top</a>
-      </p>
+      {isLoading && <LoadingSpinner />}
     </>
   );
 };
