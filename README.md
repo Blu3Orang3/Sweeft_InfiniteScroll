@@ -2,6 +2,8 @@
 
 ## this is my solution to given task
 
+[deployment on s3](http://sweeft-infinitescroll.s3-website.eu-central-1.amazonaws.com/)
+
  deployments doesn't work unfortunately due to cross origin policy,but hopefully it should work locally
 
 ```mermaid
