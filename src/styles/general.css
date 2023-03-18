@@ -27,54 +27,13 @@ fieldset {
   border-image: initial;
 }
 
-.infoField {
-  margin-left: 20px;
-  width: 100%;
+p {
+  margin: 3px 1px 1px 5px;
+  font-size: large;
 }
 
 .root {
   position: relative;
-}
-
-.wrapper-container {
-  max-width: 1250px;
-  margin: 0 auto;
-}
-
-.list-grid-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-  margin-top: 1rem;
-}
-
-.list-item {
-  width: 25%;
-}
-
-.list-item-content {
-    margin: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
-.list-item img{
-  height: 100%;
-  width: 100%;
-}
-.profileInfoCard img{
-  height: 25%;
-  width: 25%;
-}
-    p{
-  margin: 3px 1px 1px 5px;
-  font-size: large;
-}
-.list-item a{
-
-  text-decoration: none ;
-  color: black ;
 }
 
 .loader {
@@ -82,13 +41,20 @@ fieldset {
   left: 50%;
 }
 
-.profileInfoCard {
-  display: flex;
-  flex-direction: row;
+.button {
+  padding: 1rem;
+  margin: 15px;
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  text-align: end;
 
-  justify-content: space-between;
-  align-items: center;
+  border-radius: 10%;
+}
 
 
-  font-size: large;
+.wrapper-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 2rem;
 }

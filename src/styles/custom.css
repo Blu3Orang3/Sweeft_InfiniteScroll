@@ -1,0 +1,73 @@
+
+/* -------------list------------- */
+.list-grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin-top: 1rem;
+}
+
+.list-item {
+  width: 25%;
+}
+
+.list-item-content {
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.list-item img{
+  height: 100%;
+  width: 100%;
+}
+
+.list-item a{
+
+  text-decoration: none ;
+  color: black ;
+}
+
+/* ----list end------- */
+
+/* ------profile card--------- */
+
+.profileInfoCard {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+
+  font-size: large;
+}
+
+.profileInfoCard img{
+  height: 25%;
+  width: 25%;
+}
+
+.profileInfoCard span {
+  text-decoration: underline;
+}
+
+.infoField {
+  margin-left: 20px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

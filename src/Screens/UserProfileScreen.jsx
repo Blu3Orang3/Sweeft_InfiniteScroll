@@ -61,7 +61,7 @@ const UserProfileScreen = () => {
 
   return (
     <div className="wrapper-container">
-      <Link to='/'>Go Back</Link>
+      <Link to='/' className="button">Go Back</Link>
       {isUserLoading && <p>Image loading....</p>}
       {userData ? <ProfileDetailsCard user={userData} /> : null}
       <h2>Friends:</h2>

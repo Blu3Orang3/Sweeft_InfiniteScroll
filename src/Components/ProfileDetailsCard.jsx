@@ -15,10 +15,10 @@ const ProfileDetailsCard = ({ user }) => {
           <p>{user.title}</p>
         </div>
         <br />
-        <p>Email: {user.email}</p>
-        <p>IP: {user.ip}</p>
-        <p>Job Area: {user.jobArea}</p>
-        <p>Job Type: {user.jobType}</p>
+        <p><span>Email: </span> {user.email}</p>
+        <p><span>IP Address: </span> {user.ip}</p>
+        <p><span>Job Area: </span> {user.jobArea}</p>
+        <p><span>Job Type: </span> {user.jobType}</p>
       </div>
       </fieldset>
       <fieldset className="addressField">
@@ -26,11 +26,11 @@ const ProfileDetailsCard = ({ user }) => {
       <div className='userInfo'>
         {user.address ? (
           <>
-            <p>City: {user.address.city}</p>
-            <p>Country: {user.address.country}</p>
-            <p>State: {user.address.state}</p>
-            <p>Street Address: {user.address.streetAddress}</p>
-            <p>Zip: {user.address.zipCode}</p>
+            <p><span>City: </span> {user.address.city}</p>
+            <p><span>Country: </span> {user.address.country}</p>
+            <p><span>State: </span> {user.address.state}</p>
+            <p><span>Street Address: </span> {user.address.streetAddress}</p>
+            <p><span>Zip: </span> {user.address.zipCode}</p>
           </>
         ) : null}
       </div>
