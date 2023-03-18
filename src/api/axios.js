@@ -9,18 +9,18 @@ export const getUserList = async (page = 1, size, options = {}) => {
   return response.data.list;
 };
 export const getUserFriendsList = async (
-  userId,
   page = 1,
   size,
+  userId,
   options = {}
 ) => {
   const response = await api.get(
     `user/${userId}/friends/${page}/${size}`,
     options
   );
-  return response;
+  return response.data.list;
 };
-export const getUser = async (userId = 1, options = {}) => {
-  const response = await api.get(`user/${userId}/`, options);
-  return response;
+export const getUser = async (userId, options = {}) => {
+  const response = await api.get(`user/${userId}`, options);
+  return response.data;
 };
