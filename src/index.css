@@ -31,6 +31,10 @@ code {
   height: 100%;
   width: 100%;
 }
+.profileInfoCard img{
+  height: 25%;
+  width: 25%;
+}
     p{
   margin: 3px 1px 1px 5px;
   font-size: large;
