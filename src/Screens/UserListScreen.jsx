@@ -1,6 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import ProfileCard from '../Components/ProfileCard';
-import useList from '../getterHooks/useList';
+import useList from '../hooks/useList';
 import LoadingSpinner from '../Components/LoadingSpinner';
 
 const UserListScreen = () => {
