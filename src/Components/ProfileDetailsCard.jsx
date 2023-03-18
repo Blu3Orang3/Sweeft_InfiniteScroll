@@ -14,6 +14,7 @@ const ProfileDetailsCard = ({ user }) => {
           </p>
           <p>{user.title}</p>
         </div>
+        <br />
         <p>Email: {user.email}</p>
         <p>IP: {user.ip}</p>
         <p>Job Area: {user.jobArea}</p>

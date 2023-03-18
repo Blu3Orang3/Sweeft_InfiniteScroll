@@ -32,8 +32,6 @@ const useList = (page = 1, size = 8) => {
     return () => controller.abort();
   }, [page,size]);
 
-  console.log(size,page,"userlist");
-
   return { isLoading, isError, error, results, hasNextPage };
 };
 

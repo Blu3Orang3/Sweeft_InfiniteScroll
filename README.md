@@ -2,7 +2,7 @@
 
 ## this is my solution to given task
 
- deployments doesn't work unfortunately due to cross origin policy, I was unable to fix it but hopefully it should work locally
+ deployments doesn't work unfortunately due to cross origin policy,but hopefully it should work locally
 
 ```mermaid
 sequenceDiagram
