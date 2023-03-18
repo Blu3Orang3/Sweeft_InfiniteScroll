@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-  baseURL: '//sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/',
+  baseURL: 'http://sweeftdigital-intern.eu-central-1.elasticbeanstalk.com/',
 });
 
 export const getUserList = async (page = 1, size, options = {}) => {
