@@ -2,8 +2,8 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 import { useParams, Link } from "react-router-dom";
 import ProfileCard from '../Components/ProfileCard';
 import ProfileDetailsCard from '../Components/ProfileDetailsCard';
-import useProfile from '../getterHooks/useProfile';
-import useFriendList from "../getterHooks/useFriendList";
+import useProfile from '../hooks/useProfile';
+import useFriendList from "../hooks/useFriendList";
 import LoadingSpinner from '../Components/LoadingSpinner';
 
 const UserProfileScreen = () => {
@@ -14,7 +14,7 @@ const UserProfileScreen = () => {
 
   console.log(userId);
 
-  const { isLoading, isError, error, friendData, hasNextPage, setFriendData } = useFriendList(
+  const { isLoading, isError, error, friendData, hasNextPage, setFriendData,getUserFriendsList } = useFriendList(
     page,
     size,
     userId
@@ -47,7 +47,7 @@ const UserProfileScreen = () => {
     [isLoading, hasNextPage]
   );
 
-  // if (isError||isUserError) return <p className='center'>List Error: {error.message } <br /> User Error: {userError.message}</p>;
+  if (isError||isUserError) return <p className='center'>List Error: {error.message } <br /> User Error: {userError.message}</p>;
 
   const FriendList = friendData.map((user, i) => {
     if (friendData.length === i + 1) {

@@ -38,7 +38,7 @@ const useFriendList = (page = 1, size = 8, userId,) => {
   }, [page,size,userId]);
 
 
-  return { isLoading, isError, error, friendData, hasNextPage, setFriendData };
+  return { isLoading, isError, error, friendData, hasNextPage, setFriendData,getUserFriendsList };
 };
 
 export default useFriendList;
