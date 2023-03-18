@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sweeft_infiniteScroll/static/css/main.d8419f73.css",
+    "main.js": "/Sweeft_infiniteScroll/static/js/main.efeb48e8.js",
+    "index.html": "/Sweeft_infiniteScroll/index.html",
+    "main.d8419f73.css.map": "/Sweeft_infiniteScroll/static/css/main.d8419f73.css.map",
+    "main.efeb48e8.js.map": "/Sweeft_infiniteScroll/static/js/main.efeb48e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8419f73.css",
+    "static/js/main.efeb48e8.js"
+  ]
+}
