@@ -7,4 +7,4 @@
 
 infinite scrolling functionality is implemented 
 
-project was bootstrapped with Create React App so most of the command are same.
+
